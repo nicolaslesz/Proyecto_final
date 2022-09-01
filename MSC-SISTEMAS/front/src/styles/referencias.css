@@ -8,9 +8,9 @@
 /* .refe div:hover{box-shadow: 0 -3px  grey ;transform: translate(0px,-10px);}  */ */
 .refe img{width: 75px;height: 75px;}
 .refe{display: flex;flex-direction:column ;border: 2pt solid darkorchid;margin-top: 30px;margin-bottom:10px;border-radius: 50px; width: 250px;height: 350px;align-items: center;}
-.refe img{width: 70px;height: 70px;}
+.refe img{width: 90px;height: 90px;}
 
-.container{display: flex;flex-wrap: wrap;flex-direction: col;justify-content: space-between;width: 980px;font-family: 'Baloo Tammudu 2', cursive;}
+.container{display: flex;flex-wrap: wrap;flex-direction: col;justify-content: space-between;width: 980px;font-family: 'Baloo Tammudu 2', cursive; font-size: 10pt; text-align: center;}
 /* .container div:hover{box-shadow: 0 -2px  grey ;transform: translate(0px,-10px);} */
 /* .acomoda{display:flexbox ;flex-direction: row;} */
 
