@@ -12,7 +12,7 @@ const Referencias = (props) => {
     useEffect(() => {
         const cargarComentarios = async () => {
             setLoading(true);
-            const response = await axios.get('http://localhost:3000/api/comentarios');
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/comentarios`);
             setComentarios(response.data);
             setLoading(false);
         };
