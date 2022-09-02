@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 01-09-2022 a las 00:13:16
+-- Tiempo de generación: 01-09-2022 a las 02:14:58
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -48,6 +48,27 @@ INSERT INTO `comentarios` (`com_id`, `com_nombre`, `com_comentario`, `com_foto_i
 (36, 'Martina', '¡Tenemos sistema para toda la vida!, Gracias', 'czlbvjaynwdgyhzzuhgi'),
 (37, 'Sofía', 'Coparado con sistemas anteriores que hemos tenido, el nivel de performance\r\nque maneja la empresa es altamente destacable.', 'gsmm47qck3kpxn77rvhn'),
 (38, 'Layla', 'Gracias por el desarrollo, nos facilitó todo!', 'riuvfm3h75lbbqqzkmmt');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES
+(1, 'nicolaslesz', '81dc9bdb52d04dc20036dbd8313ed055');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
